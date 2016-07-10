@@ -51,4 +51,10 @@ describe('Find a person (location) 2', function() {
 });
 
 
-
+describe('Check Map', function() {
+  it('return if of a map is valid 1', function() {
+    var map = new Map (["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "efrat at"]);
+    var ans = map.check_map();
+    expect(ans).to.be.eql(true);
+  });
+});
