@@ -4,7 +4,8 @@ function Map(posts) {
 }
 
 Map.prototype.find_a_person = function(name) {
-  return [];
-  };
-
-module.exports = Map;
+var post=
+    this._posts.filter(
+    function( s ) { return s.indexOf(name) !== -1; });
+return post;
+};
