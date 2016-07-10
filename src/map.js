@@ -17,3 +17,7 @@ Map.prototype.find_a_person_location = function(name) {
     function( s ) { return s.indexOf(name) !== -1 && s.indexOf('at ') !== -1; });
 	return post.length!==0;
 };
+
+
+
+module.exports = Map;
