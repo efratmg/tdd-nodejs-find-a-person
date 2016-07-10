@@ -11,3 +11,9 @@ return post;
 };
 
 
+Map.prototype.find_a_person_location = function(name) {
+	var post=
+    this._posts.filter(
+    function( s ) { return s.indexOf(name) !== -1 && s.indexOf('at ') !== -1; });
+	return post.length!==0;
+};
