@@ -36,8 +36,8 @@ describe('Find a person (location) 1', function() {
 
 describe('Find a person (location) 2', function() {
   it('Given a person name, return if posts (of a map) containing location (in any of a post fields)', function() {
-    var map = new Map (["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "efrat "]);
-    var ans = map.find_a_person_location("efrat");
+    var map = new Map (["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "david "]);
+    var ans = map.find_a_person_location(" ");
     expect(ans).to.be.eql(false);
   });
 });
