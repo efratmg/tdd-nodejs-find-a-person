@@ -58,3 +58,12 @@ describe('Check Map', function() {
     expect(ans).to.be.eql(true);
   });
 });
+
+describe('Check Map 2', function() {
+  it('return if of a map is valid 2', function() {
+    var map = new Map (["I met das at Chabad house Bangkok", "We found Or A. R.I.P at Chabad house Bangkok", "efrat at"]);
+    var ans = map.check_map();
+    expect(ans).to.be.eql(false);
+  });
+});
+
